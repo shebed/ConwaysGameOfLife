@@ -9,9 +9,9 @@ OFF = 0
 vals = [ON, OFF]
 
 def printInputFile(grid, N, M, G):
-    with open("inputSample.txt", 'a') as f:
+    with open("inputSample03.txt", 'w') as f:
         f.write(str(N) + " " + str(M) + " #Width Height \n")
-        f.write(str(G) + " # Generations \n")
+        f.write(str(G) + "  # Generations \n")
         for i in range(N):
           for j in range(M):
             if grid[i, j]:
@@ -26,7 +26,7 @@ def randomGrid(N, M):
 
 
 def main():
-    N = 50
+    N = 100
     M = 100
     G = 200
     grid = np.array([])

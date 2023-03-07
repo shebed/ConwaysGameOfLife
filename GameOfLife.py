@@ -295,7 +295,7 @@ def printData():
     global totalLwsps
     global totalShapes 
 
-    with open("outputs.txt", 'a') as f:
+    with open("outputSample01.txt", 'a') as f:
         f.write("--------------------------------\n")
         f.write("|            | Count | Percent |\n")
         f.write("|------------+-------+---------|\n")
@@ -360,7 +360,7 @@ def main():
     # TODO: add arguments
 
     data = []
-    N, M, G= readFile("inputSample05.txt", data)
+    N, M, G= readFile("inputSample01.txt", data)
 
     # declare grid
     grid = np.zeros(N * M).reshape(N, M)
